@@ -1,3 +1,6 @@
-body {
-    background: black;
-}
+@import "./utils/variables";
+
+@import "./base/base";
+@import "./base/typo";
+
+@import "./pages/homePage";

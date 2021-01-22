@@ -1,5 +1,100 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 body {
-  background: black;
+  box-sizing: border-box;
+  width: 100vw;
+  min-width: 320px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* dm-sans-regular - latin */
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../public/font/dm-sans-v6-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../public/font/dm-sans-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../public/font/dm-sans-v6-latin-regular.woff2") format("woff2"), url("../public/font/dm-sans-v6-latin-regular.woff") format("woff"), url("../public/font/dm-sans-v6-latin-regular.ttf") format("truetype"), url("../public/font/dm-sans-v6-latin-regular.svg#DMSans") format("svg");
+  /* Legacy iOS */
+}
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+strong {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+em {
+  font-style: normal;
+  font-size: 9px;
+}
+
+p {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.invisible {
+  font-size: 0;
+}
+
+.skipToContent {
+  border-radius: 5px;
+  background-color: #db8876;
+  color: #000000;
+  padding: 2px 20px;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+  position: absolute;
+  top: 5px;
+  --leftPosSkip: calc(50% - 85px);
+  left: var(--leftPosSkip);
+  display: none;
+}
+
+.main__title {
+  position: absolute;
+  top: 35px;
+  --leftPos: calc(50% + 300px);
+  left: var(--leftPos);
+}
+@media (max-width: 425px) {
+  .main__title {
+    --leftPos: calc(60%);
+    top: 50px;
+  }
+}
+.main__content {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=style.css.map */
