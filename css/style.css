@@ -29,10 +29,17 @@ body {
 }
 
 h1 {
+  color: #901c1c;
   font-size: 36px;
+}
+@media (max-width: 425px) {
+  h1 {
+    font-size: 14px;
+  }
 }
 
 h2 {
+  color: #bf5138;
   font-size: 36px;
 }
 
@@ -40,11 +47,13 @@ strong {
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
+  color: #901c1c;
 }
 
 em {
   font-style: normal;
   font-size: 9px;
+  color: #525252;
 }
 
 p {
@@ -58,6 +67,182 @@ a {
 
 .invisible {
   font-size: 0;
+}
+
+.header {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+.header__logo {
+  max-width: 200px;
+  max-height: 50px;
+}
+@media (max-width: 425px) {
+  .header__logo {
+    max-width: 150px;
+    max-height: 37.5px;
+  }
+}
+.header__nav {
+  padding-top: 12px;
+  padding-left: 100px;
+}
+@media (max-width: 425px) {
+  .header__nav {
+    padding-left: 0;
+    margin: 0 40px;
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    display: block;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+}
+
+.button {
+  background: #901c1c;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 1em;
+  width: 170px;
+  height: 70px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+}
+@media (max-width: 425px) {
+  .button {
+    height: 35px;
+    line-height: 20px;
+    margin: 10px 0px;
+    margin-left: calc(50% - 85px);
+  }
+}
+
+.modalForm {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: calc(50% - 250px);
+  margin: 5% auto;
+  width: 100%;
+  max-width: 669px;
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+  background: #db8876;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #000000;
+  padding-top: 10px;
+}
+@media (max-width: 669px) {
+  .modalForm {
+    left: 0;
+  }
+}
+.modalForm__body {
+  padding: 10px 8%;
+  margin: 10px auto;
+}
+.modalForm__body h1 {
+  font-size: 64px;
+  color: #000000;
+}
+@media (max-width: 425px) {
+  .modalForm__body h1 {
+    font-size: 36px;
+  }
+}
+.modalForm label {
+  font-family: var(--font-default);
+  font-size: 36px;
+  font-weight: normal;
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+@media (max-width: 425px) {
+  .modalForm label {
+    font-size: 24px;
+  }
+}
+.modalForm input {
+  padding: 8px;
+  border: 0.8px solid #ffffff;
+  outline: none;
+}
+
+.text-control {
+  margin: 0;
+  padding: 8px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 22px;
+  height: 52px;
+  outline: none;
+}
+@media (max-width: 425px) {
+  .text-control {
+    font-size: 18px;
+  }
+}
+.text-control:focus {
+  border: #901c1c solid 4px;
+}
+.text-control--message {
+  height: 184px;
+}
+
+.msg_error {
+  font-size: 18px;
+  color: #ffffff;
+  display: none;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  text-align: left;
+}
+@media (max-width: 425px) {
+  .msg_error {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+}
+
+.msg_submitSuccess {
+  font-size: 22px;
+  color: #ffffff;
+  display: none;
+  float: right;
+  margin-top: 40px;
+  margin-right: 40px;
+  text-align: center;
+}
+@media (max-width: 425px) {
+  .msg_submitSuccess {
+    font-size: 18px;
+    margin: 0 50px 0 0;
+    padding-bottom: 10px;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 45px;
+  top: 45px;
+  font-size: 55px;
+  color: #ffffff;
+  cursor: pointer;
+}
+@media (max-width: 425px) {
+  .close {
+    font-size: 36px;
+    right: 35px;
+    top: 35px;
+  }
 }
 
 .skipToContent {
