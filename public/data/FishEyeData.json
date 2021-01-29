@@ -1,0 +1,128 @@
+{
+    "photographers": [
+      {
+        "name": "Mimi Keel",
+        "id": 243,
+        "city": "London",
+        "country": "UK",
+        "tags": ["portrait", "events", "travel", "animals"],
+        "tagline": "Finding beauty in everyday things",
+        "price": 400,
+        "portrait": "MimiKeel.jpg"
+      },
+      {
+        "name": "Ellie-Rose Wilkens",
+        "id": 930,
+        "city": "Paris",
+        "country": "France",
+        "tags": ["sports", "architecture"],
+        "tagline": "Capturing Complex Composition",
+        "price": 250,
+        "portrait": "EllieRoseWilkens.jpg"
+      },
+      {
+        "name": "Tracy Galindo",
+        "id": 82,
+        "city": "Montreal",
+        "country": "Canada",
+        "tags": ["art", "fashion", "events"],
+        "tagline": "Freelance photographer",
+        "price": 500,
+        "portrait": "TracyGalindo.jpg"
+      }
+    ],
+    "media": [
+      {
+        "id": 342550,
+        "photographerId": 82,
+        "image": "Fashion_Yellow_Beach.jpg",
+          "alt": "Yellow Beach", 
+        "tags": ["fashion"],
+        "likes": 62,
+        "date": "2011-12-08",
+        "price": 55
+      },
+      {
+        "id": 8520927,
+        "photographerId": 82,
+        "image": "Fashion_Urban_Jungle.jpg",
+        "alt": "Urban Jungle", 
+        "tags": ["fashion"],
+        "likes": 11,
+        "date": "2011-11-06",
+        "price": 55
+      },
+      {
+        "id": 9025895,
+        "photographerId": 82,
+        "image": "Fashion_Pattern_on_Pattern.jpg",
+        "alt": "Pattern on Pattern", 
+        "tags": ["fashion"],
+        "likes": 72,
+        "date": "2013-08-12",
+        "price": 55
+      },
+  
+      {
+        "id": 623534343,
+        "photographerId": 243,
+        "image": "Travel_Lonesome.jpg",
+        "alt": "Lonesome", 
+        "tags": ["travel"],
+        "likes": 88,
+        "date": "2019-02-03",
+        "price": 45
+      },
+      {
+        "id": 625025343,
+        "photographerId": 243,
+        "image": "Travel_HillsideColor.jpg",
+        "alt": "Hillside Color", 
+        "tags": ["travel"],
+        "likes": 85,
+        "date": "2019-04-03",
+        "price": 45
+      },
+      {
+        "id": 2525345343,
+        "photographerId": 243,
+        "image": "Portrait_Wednesday.jpg",
+          "alt": "Wednesday", 
+        "tags": ["portait"],
+        "likes": 34,
+        "date": "2019-04-07",
+        "price": 45
+      },
+  
+      {
+        "id": 952343423,
+        "photographerId": 930,
+        "video": "Sport_Tricks_in_the_air.mp4",
+        "alt": "Tricks in the air", 
+        "tags": ["sport"],
+        "likes": 150,
+        "date": "2018-02-30",
+        "price": 70
+      },
+      {
+        "id": 235234343,
+        "photographerId": 930,
+        "image": "Sport_Next_Hold.jpg",
+        "alt": "Next Hold", 
+        "tags": ["sport"],
+        "likes": 101,
+        "date": "2018-03-05",
+        "price": 65
+      },
+      {
+        "id": 235343222,
+        "photographerId": 930,
+        "image": "sport_water_tunnel.jpg",
+        "alt": "Water Tunnel", 
+        "tags": ["sport"],
+        "likes": 103,
+        "date": "2018-03-10",
+        "price": 70
+      }
+    ]
+  }
