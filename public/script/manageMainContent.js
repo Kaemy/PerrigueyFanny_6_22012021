@@ -3,7 +3,7 @@ const tagSelectList_element = document.getElementById('navTagList');
 const skipToContentElement = document.querySelector('.skipToContent');
 const tagSelectList = tagSelectList_element.children;
 
-let requestURL = './public/data/FishEyeData.json';
+let requestURL = 'https://kaemy.github.io/PerrigueyFanny_6_22012021//public/data/FishEyeData.json';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -98,15 +98,4 @@ function Photographer(data) {
     
         return photographerCard;
     };
-}
-
-// Use of keyboard arrow keys to do the modalMedia rotation
-document.onkeydown = checkKey;
-function checkKey(e) {
-    e = e || window.event;
-
-    if(e.keyCode == '9')
-    {
-        skipToContentElement.style.display = "block";
-    }
-}
+};
