@@ -84,7 +84,7 @@ function Photographer(data) {
         photographerTags.setAttribute("tabindex", "0");
         photographerTags.setAttribute("aria-label", "Tags");
 
-        photographerName.innerHTML = "<a href=\"photographPage.html?id=" + this.id + "\">  <img class=\"header__logo\" src=\"public/img/PhotographersIDphotos/" + this.portrait + "\" > <br>" + this.name + "</a>";
+        photographerName.innerHTML = "<a href=\"photographPage.html?id=" + this.id + "\">  <img class=\"header__logo\" src=\"public/img/photographersIDphotos/" + this.portrait + "\" > <br>" + this.name + "</a>";
         photographerDesk.innerHTML = "<strong>" + this.city + ", " + this.country + "</strong> <br>" + this.tagline + "<br> <em> $" + this.price + "/day </em>";
         for(var i=0; i<this.tags.length; i++){
             const tag = document.createElement("li");
