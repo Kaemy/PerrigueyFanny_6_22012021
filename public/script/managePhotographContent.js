@@ -52,13 +52,105 @@ getAsync().then((data) =>
   });
 
   // Utility function to get the data at a specific index
-  function getModalMedia(modalIndex){
-    const index = selectedOrder[modalIndex].index;
-    return photographerMediaList[index];
+    function getModalMedia(modalIndex){
+      const index = selectedOrder[modalIndex].index;
+      return photographerMediaList[index];
+    };
+
+// Generation of modal media
+  function generateFocusElement(modalIndex){
+    const media = getModalMedia(modalIndex);
+    if(media.image == undefined)
+    {
+        imgShow.innerHTML = "<video tabIndex=0 controls> <source src=\"./public/img/photos/" + media.video + "\" type=\"video/mp4\">" + media.alt + "</video>";
+    }
+    else{
+        imgShow.innerHTML= "<img tabIndex=0 src=\"public/img/photos/" + media.image + "\" alt=\""+ media.alt + "\">";
+    } 
+    
+    imgName.innerHTML= media.alt;
+  };
+
+  // Event to move to next media
+  nextImg.addEventListener('click', ($event) => {
+    $event.preventDefault();
+    goToNextImg();
+});
+
+function goToNextImg(){
+    modalMediaIndex = makeItRoll(modalMediaIndex, gallerySize,"forward");
+    generateFocusElement(modalMediaIndex);
+    imgShow.firstChild.focus();
 }
 
-
+// Event to move to previous media
+prevImg.addEventListener('click', ($event) => {
+    $event.preventDefault();
+    goToPrevImg();
 });
+
+function goToPrevImg(){
+    modalMediaIndex = makeItRoll(modalMediaIndex, gallerySize,"backward");
+    generateFocusElement(modalMediaIndex);
+    imgShow.firstChild.focus();
+  }
+
+ // Generate the click events on the media cards (open modalMedia + like)
+function generateModalMediaClickEvents(){
+    var modalMedia_Opener = document.getElementsByClassName("modalMedia_open"); 
+    var likeButton = document.getElementsByClassName('add_like_button');
+
+    for(let i=0;i<modalMedia_Opener.length;i++){ 
+        modalMedia_Opener[i].addEventListener("click", () => { 
+            launchModalMedia();
+            modalMediaIndex = i;
+            generateFocusElement(modalMediaIndex);
+            modalMedia.focus();
+        }); 
+
+        likeButton[i].addEventListener("click", () => { 
+            likeButton[i].innerHTML = (parseInt(likeButton[i].textContent, 10) +1) + " <i class=\"fas fa-heart\"></i>";
+            photographerLikes.innerHTML = (parseInt(photographerLikes.textContent, 10) +1) + " <i class=\"fas fa-heart\"></i>";
+
+            for(let j=0; j<photographerMediaList.length; j++){
+                if(orderPopularity[i].name == photographerMediaList[j].alt){
+                    photographerMediaList[j].likes = parseInt(photographerMediaList[j].likes) +1;
+                }
+            }
+
+            if(i>0)
+            {
+                if(photographerMediaList[orderPopularity[i].index].likes > photographerMediaList[orderPopularity[i-1].index].likes)
+                {
+                    var temp = orderPopularity[i];
+                    orderPopularity[i] = orderPopularity[i-1];
+                    orderPopularity[i-1] = temp;
+                    if(selectOrder_roll.value == "popularity"){
+                        selectedOrder = orderPopularity;
+                        generateGallery(photographerMediaList, selectedOrder);
+                        generateModalMediaClickEvents();
+                    }
+                }
+            }
+        }); 
+    }
+}
+
+// Add keyboard events to close the display
+    // Also add the use of keyboard arrow keys to do the modalMedia rotation
+    modalMedia.addEventListener('keyup', function (event) {
+      if (event.key === 'Escape') {
+          closeModalMedia();
+      }
+      if (event.key == 'ArrowLeft') {
+          goToPrevImg();
+      }
+      if (event.key == 'ArrowRight') {
+          goToNextImg();
+      }
+    });
+}); 
+
 
 // get the index of the photographer based on his ID number
 function getPhotographer(ID, photographerList)

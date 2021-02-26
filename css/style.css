@@ -1,3 +1,12 @@
+@keyframes modalopen {
+  from {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  to {
+    opacity: 1;
+  }
+}
 *,
 *::after,
 *::before {
@@ -19,9 +28,9 @@ body {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../public/font/dm-sans-v6-latin-regular.eot");
+  src: url("./public/font/dm-sans-v6-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../public/font/dm-sans-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../public/font/dm-sans-v6-latin-regular.woff2") format("woff2"), url("../public/font/dm-sans-v6-latin-regular.woff") format("woff"), url("../public/font/dm-sans-v6-latin-regular.ttf") format("truetype"), url("../public/font/dm-sans-v6-latin-regular.svg#DMSans") format("svg");
+  src: local(""), url("./public/font/dm-sans-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("./public/font/dm-sans-v6-latin-regular.woff2") format("woff2"), url("./public/font/dm-sans-v6-latin-regular.woff") format("woff"), url("./public/font/dm-sans-v6-latin-regular.ttf") format("truetype"), url("./public/font/dm-sans-v6-latin-regular.svg#DMSans") format("svg");
   /* Legacy iOS */
 }
 * {
@@ -154,6 +163,36 @@ a {
 .tagActive {
   color: #ffffff;
   background-color: #901c1c;
+}
+
+.selectMenu {
+  margin: 0 50px;
+  margin-bottom: 40px;
+  display: flex;
+}
+@media (max-width: 425px) {
+  .selectMenu {
+    display: none;
+  }
+}
+.selectMenu label {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  margin-right: 40px;
+  padding-top: 7px;
+}
+.selectMenu select, .selectMenu option {
+  background-color: #901c1c;
+  color: #ffffff;
+  width: 170px;
+  height: 55px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+.selectMenu select {
+  border-radius: 5px;
 }
 
 .mediaCard {
@@ -532,6 +571,11 @@ a {
   top: 35px;
   --leftPos: calc(50% + 300px);
   left: var(--leftPos);
+}
+@media (max-width: 768px) {
+  .main__title {
+    --leftPos: calc(52%);
+  }
 }
 @media (max-width: 425px) {
   .main__title {
