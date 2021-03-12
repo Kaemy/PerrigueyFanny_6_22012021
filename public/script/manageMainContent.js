@@ -98,4 +98,15 @@ function Photographer(data) {
     
         return photographerCard;
     };
-};
+}
+
+// Use of keyboard arrow keys to do the modalMedia rotation
+document.onkeydown = checkKey;
+function checkKey(e) {
+    e = e || window.event;
+
+    if(e.keyCode == '9')
+    {
+        skipToContentElement.style.display = "block";
+    }
+}

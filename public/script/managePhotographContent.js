@@ -57,6 +57,20 @@ getAsync().then((data) =>
       return photographerMediaList[index];
     };
 
+      // get the index of the photographer based on his ID number
+function getPhotographer(ID, photographerList)
+{
+    let photographIndex;
+    for(var i=0; i<photographerList.length; i++)
+    {
+        if(photographerList[i].id == ID)
+        {
+            photographIndex=i;
+            return i;
+        }
+    }
+}
+
 // Generation of modal media
   function generateFocusElement(modalIndex){
     const media = getModalMedia(modalIndex);
