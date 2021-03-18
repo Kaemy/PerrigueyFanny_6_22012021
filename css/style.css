@@ -78,46 +78,6 @@ a {
   font-size: 0;
 }
 
-.c-btn {
-  border: none;
-  border-radius: 0.25rem;
-  outline: none;
-  font-weight: 700;
-  background: #db8876;
-  cursor: pointer;
-}
-.c-btn--cta {
-  margin: 2rem;
-  padding: 1.25rem;
-  color: #000000;
-  font-size: 18px;
-  font-weight: 700;
-  background: #db8876;
-  transition: background-color 300ms;
-}
-.c-btn--cta:hover {
-  background: #e6ab9e;
-}
-
-#up-button {
-  position: fixed;
-  top: 0.25rem;
-  left: calc(50% - 5rem);
-  z-index: 6000;
-  width: 10rem;
-  padding: 0.5rem;
-  color: black;
-  text-align: center;
-  transform: translateY(-3rem);
-  transition: color 250ms, transform 300ms;
-}
-#up-button:hover {
-  color: #fafafa;
-}
-#up-button.visible {
-  transform: translateY(0);
-}
-
 .photographerCard {
   max-width: 400px;
   width: fit-content;
