@@ -243,7 +243,8 @@
       "tags": ["travel"],
       "likes": 23,
       "date": "2017-03-18",
-      "price": 45
+      "price": 45,
+      "alt": "Chevaux sauvages dans les montagnes"
     },
     {
       "id": 343423425,
@@ -288,7 +289,8 @@
       "tags": ["portrait"],
       "likes": 66,
       "date": "2018-05-24",
-      "price": 45
+      "price": 45,
+      "alt": "Portrait de Sunkissed"
     },
     {
       "id": 34513453,
@@ -297,7 +299,8 @@
       "tags": ["portait"],
       "likes": 52,
       "date": "2017-04-21",
-      "price": 45
+      "price": 45,
+      "alt": "Portrait de Shaw"
     },
     {
       "id": 23523533,
@@ -306,7 +309,8 @@
       "tags": ["portait"],
       "likes": 95,
       "date": "2018-11-02",
-      "price": 45
+      "price": 45,
+      "alt": "Portrait d'Alexandra"
     },
     {
       "id": 525834234,
@@ -343,7 +347,8 @@
       "tags": ["portait"],
       "likes": 34,
       "date": "2019-04-07",
-      "price": 45
+      "price": 45,
+      "alt": "Portrait de Wednesday"
     },
     {
       "id": 2523434634,
@@ -352,7 +357,8 @@
       "tags": ["portait"],
       "likes": 63,
       "date": "2019-04-07",
-      "price": 45
+      "price": 45,
+      "alt": "Portrait de Nora"
     },
     {
       "id": 398847109,
@@ -397,7 +403,8 @@
       "tags": ["animals"],
       "likes": 142,
       "date": "2019-08-23",
-      "price": 60
+      "price": 60,
+      "alt": "Chevaux sauvages dans les montagnes"
     },
     {
       "id": 95234343,
@@ -406,7 +413,8 @@
       "tags": ["animals"],
       "likes": 59,
       "date": "2019-07-02",
-      "price": 60
+      "price": 60,
+      "alt": "Oiseau arc-en-ciel"
     },
 
     {
