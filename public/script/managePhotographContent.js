@@ -15,7 +15,7 @@ let modalMediaIndex = 0;
 
 async function getAsync() 
 {
-  let response = await fetch(`https://kaemy.github.io/PerrigueyFanny_6_22012021//public/data/FishEyeData.json`);
+  let response = await fetch(`https://kaemy.github.io/PerrigueyFanny_6_22012021/public/data/FishEyeData.json`);
   let data = await response.json()
   return data;
 }
