@@ -26,7 +26,7 @@
 	  
 	  position: fixed;
 	  top: 0;
-	  left: calc(50% - 250px);
+	  left: calc(50% - 300px);
 	  @media (max-width:669px) {
 		  left: 0;
 	  }
@@ -36,7 +36,7 @@
 		top: 60px;
 	  }
   
-	  margin: 5% auto;
+	  margin: 3% auto;
 	  width: 100%;
 	  max-width: 669px;
 	  animation-name: modalopen;
@@ -46,14 +46,13 @@
 	  overflow: hidden;
   
 	  color: $color-secondaryFilled-text;
-	  padding-top: 10px;
   
 	  &__body {
 		padding: 10px 8%;
-		margin: 10px auto;
+		margin: 5px auto;
 	  
 		& h1{
-		  font-size: 64px;
+		  font-size: 50px;
 		  color: $color-secondaryFilled-text;
   
 		  @media (max-width: $breakpoint-minMobile) {
@@ -64,11 +63,11 @@
   
 	  & label {
 		font-family: var(--font-default);
-		font-size: 36px;
+		font-size: 30px;
 		font-weight: normal;
 		display: inline-block;
 		margin-bottom: 2px;
-		margin-top: 10px;
+		margin-top: 15px;
   
 		@media (max-width: $breakpoint-minMobile) {
 		  font-size: 24px;

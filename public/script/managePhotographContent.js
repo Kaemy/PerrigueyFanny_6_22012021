@@ -215,7 +215,7 @@ function generateProfile(index, photographerList, photographerMediaList){
   photographerLikes.innerHTML = ammountOfLikes + " <em class=\"invisible\"> likes</em> <i class=\"fas fa-heart\"></i>";
   photographerPrice.innerHTML = photographer.price + "$ / day";
 
-  modalForm_title.innerHTML = "Contact me <br>" + photographer.name;
+  modalForm_title.innerHTML = "Contactez-moi <br>" + photographer.name;
 }
 
 // generate a new list of index re-arranged based on the order type
