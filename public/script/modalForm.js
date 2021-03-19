@@ -60,7 +60,7 @@ function confirmEmail(email) {
 function validateFirst(){
   if(formFirst.value.length<2)
   {
-    first_errMessage.textContent = "Please enter 2+ characters for name field";
+    first_errMessage.textContent = "Veuillez entrer au moins 2 caractère pour le prénom";
     first_errMessage.style.display = "block";    
     return false;
   }
@@ -73,7 +73,7 @@ function validateFirst(){
 function validateLast(){
   if(formLast.value.length<2)
   {
-    last_errMessage.textContent = "Please enter 2+ characters for name field";
+    last_errMessage.textContent = "Veuillez entrer au moins 2 caractère pour le nom";
     last_errMessage.style.display = "block";  
     return false;  
   }
@@ -86,7 +86,7 @@ function validateLast(){
 function validateEmail(){
   if(!confirmEmail(formEmail.value))
   {
-    email_errMessage.textContent = "You must enter a valid email";
+    email_errMessage.textContent = "Vous devez entrer une adresse email valide";
     email_errMessage.style.display = "block";  
     return false;  
   }
@@ -99,7 +99,7 @@ function validateEmail(){
 function validateMessage(){
   if(formMessage.value.length<10 || formMessage.value.length>250)
   {
-    message_errMessage.textContent = "Please enter a message from 10 to 250 char";
+    message_errMessage.textContent = "Veuillez entrer un message entre 10 et 250 caractères";
     message_errMessage.style.display = "block";  
     return false;  
   }
