@@ -11,8 +11,8 @@
     padding-top: 40px;
 
     @media (max-width: $breakpoint-minMobile) {
-      height: 800px;
-      padding-top: 250px;
+      height: 480px;
+      padding-top: 115px;
     }
 
     animation-name: modalopen;
@@ -34,9 +34,9 @@
         margin-left: calc(50% - 525px);
 
         @media (max-width: $breakpoint-minMobile) {
-          height: 250px;
-          width: 300px;
-          margin-left: calc(50% - 150px);
+          height: 190px;
+          width: 260px;
+          margin-left: calc(50% - 130px);
         }
       }
 
@@ -47,7 +47,7 @@
 
         @media (max-width: $breakpoint-minMobile) {
           font-size: 14px;
-          margin-left: calc(50% - 150px);
+          margin-left: calc(50% - 130px);
         }
       }
     }
@@ -61,9 +61,9 @@
       cursor: pointer;
 
       @media (max-width: $breakpoint-minMobile) {
-        top: 250px;
-        left: calc(50% + 160px);
-        font-size: 25px;
+        top: 110px;
+        left: calc(50% + 136px);
+        font-size: 15px;
       }
     }
 }
@@ -76,21 +76,21 @@
   top: 425px;
 
   @media (max-width: $breakpoint-minMobile) {
-    top: 370px;
-    font-size: 25px;
+    font-size: 14px;
+    top: 205px;
   }
 
   &__left{
     right: calc(50% + 550px);
     @media (max-width: $breakpoint-minMobile) {
-      right: calc(50% + 160px);
+      right: calc(50% + 141px);
     }
   }
 
   &__right{
     left: calc(50% + 550px);
     @media (max-width: $breakpoint-minMobile) {
-      left: calc(50% + 160px);
+      left: calc(50% + 141px);
     }
   }
 }

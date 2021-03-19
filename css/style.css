@@ -43,7 +43,7 @@ h1 {
 }
 @media (max-width: 425px) {
   h1 {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -187,7 +187,7 @@ a {
   background-color: #901c1c;
   color: #ffffff;
   width: 170px;
-  height: 55px;
+  height: 40px;
   padding-left: 15px;
   font-size: 18px;
 }
@@ -318,8 +318,8 @@ a {
 }
 @media (max-width: 425px) {
   .modalMedia {
-    height: 800px;
-    padding-top: 250px;
+    height: 480px;
+    padding-top: 115px;
   }
 }
 .modalMedia__body {
@@ -338,9 +338,9 @@ a {
 }
 @media (max-width: 425px) {
   .modalMedia__body img, .modalMedia__body video {
-    height: 250px;
-    width: 300px;
-    margin-left: calc(50% - 150px);
+    height: 190px;
+    width: 260px;
+    margin-left: calc(50% - 130px);
   }
 }
 .modalMedia__body p {
@@ -351,7 +351,7 @@ a {
 @media (max-width: 425px) {
   .modalMedia__body p {
     font-size: 14px;
-    margin-left: calc(50% - 150px);
+    margin-left: calc(50% - 130px);
   }
 }
 .modalMedia__close {
@@ -364,9 +364,9 @@ a {
 }
 @media (max-width: 425px) {
   .modalMedia__close {
-    top: 250px;
-    left: calc(50% + 160px);
-    font-size: 25px;
+    top: 110px;
+    left: calc(50% + 136px);
+    font-size: 15px;
   }
 }
 
@@ -379,8 +379,8 @@ a {
 }
 @media (max-width: 425px) {
   .navButton {
-    top: 370px;
-    font-size: 25px;
+    font-size: 14px;
+    top: 205px;
   }
 }
 .navButton__left {
@@ -388,7 +388,7 @@ a {
 }
 @media (max-width: 425px) {
   .navButton__left {
-    right: calc(50% + 160px);
+    right: calc(50% + 141px);
   }
 }
 .navButton__right {
@@ -396,7 +396,7 @@ a {
 }
 @media (max-width: 425px) {
   .navButton__right {
-    left: calc(50% + 160px);
+    left: calc(50% + 141px);
   }
 }
 
@@ -443,8 +443,8 @@ a {
 }
 @media (max-width: 768px) {
   .modalForm {
-    left: calc(50% - 335px);
-    top: 60px;
+    top: 0px;
+    margin: 0;
   }
 }
 .modalForm__body {
@@ -457,7 +457,7 @@ a {
 }
 @media (max-width: 425px) {
   .modalForm__body h1 {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 .modalForm label {
@@ -470,7 +470,7 @@ a {
 }
 @media (max-width: 425px) {
   .modalForm label {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 .modalForm input {
@@ -491,6 +491,7 @@ a {
 @media (max-width: 425px) {
   .text-control {
     font-size: 18px;
+    height: 35px;
   }
 }
 .text-control:focus {
@@ -498,6 +499,11 @@ a {
 }
 .text-control--message {
   height: 184px;
+}
+@media (max-width: 425px) {
+  .text-control--message {
+    height: 70px;
+  }
 }
 
 .msg_error {
@@ -677,10 +683,12 @@ a {
 @media (max-width: 768px) {
   .photographProfile__button {
     position: fixed;
-    bottom: 30px;
+    bottom: 5px;
     left: calc(50% - 85px);
     width: 170px;
     font-size: 18px;
+    padding: 14px;
+    max-height: 50px;
   }
 }
 .photographProfile__photo img {

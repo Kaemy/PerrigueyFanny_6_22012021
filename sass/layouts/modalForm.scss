@@ -22,30 +22,30 @@
   }
   
   .modalForm {
-	  display: none;
+	display: none;
 	  
-	  position: fixed;
-	  top: 0;
-	  left: calc(50% - 300px);
-	  @media (max-width:669px) {
-		  left: 0;
-	  }
-  
-	  @media (max-width:$breakpoint-minTablet) {
-		left: calc(50% - 335px);
-		top: 60px;
-	  }
-  
-	  margin: 3% auto;
-	  width: 100%;
-	  max-width: 669px;
-	  animation-name: modalopen;
-	  animation-duration: var(--modal-duration);
-	  background:$color-secondaryFilled-background;
-	  border-radius: 10px;
-	  overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: calc(50% - 300px);
+	margin: 3% auto;
+	width: 100%;
+	max-width: 669px;
+	animation-name: modalopen;
+	animation-duration: var(--modal-duration);
+	background:$color-secondaryFilled-background;
+	border-radius: 10px;
+	overflow: hidden;
   
 	  color: $color-secondaryFilled-text;
+
+	@media (max-width:669px) {
+		left: 0;
+	}
+
+	@media (max-width:$breakpoint-minTablet) {
+		top: 0px;
+		margin: 0;
+	}
   
 	  &__body {
 		padding: 10px 8%;
@@ -56,7 +56,7 @@
 		  color: $color-secondaryFilled-text;
   
 		  @media (max-width: $breakpoint-minMobile) {
-			font-size: 36px;
+			font-size: 30px;
 		  }
 		}
 	  }
@@ -70,7 +70,7 @@
 		margin-top: 15px;
   
 		@media (max-width: $breakpoint-minMobile) {
-		  font-size: 24px;
+		  font-size: 20px;
 		}
 	  }
 	  
@@ -92,6 +92,7 @@
   
 	@media (max-width: $breakpoint-minMobile) {
 	  font-size: 18px;
+	  height: 35px;
 	}
   
 	&:focus{
@@ -100,6 +101,10 @@
   
 	&--message{
 	  height: 184px;
+
+	  @media (max-width: $breakpoint-minMobile) {
+		height: 70px;
+	}
 	}
   }
   
